@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <body bgcolor="#1A2238">
+        <header style="display:flex;justify-content: center;margin:auto;width:625px;height:150px;background-color: gainsboro; border-radius: 10px 10px 10px 10px;">
+            <img src="1.png" style="margin-top:35px;margin-right:65px;display: flex;float:left; height:50%">
+            <img src="2.png" style="margin-top:15px;display: flex;float:right;height: 80%;">
+        </header>
+        <br>
+        <main style="display:flex;justify-content: center;margin:auto;width:625px;height:650px;background-color: gainsboro; border-radius: 10px 10px 10px 10px; font-family: Arial; font-size:15px">
+            <form method="post" style="margin-top:50px; margin-right:auto; margin-left:60px">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" style="margin-left:199px;" size="30px" placeholder="nama@..." required> 
+                <br><br>
+                
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" style="margin-left:196px;" size="30px" placeholder="Masukkan Nama..." required> 
+                <br><br>
+
+                <label for="tanggal_lahir">Tanggal Lahir</label>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir" style="margin-left:146px" required> 
+                <br><br>
+
+                <label for="jenis_kelamin">Jenis Kelamin</label>
+                <select id="jenis_kelamin" name="jenis_kelamin" style="margin-left:143px" required>
+                    <option value="laki_laki">Laki-Laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select>
+                <br><br>
+                
+                <label for="universitas">Perguruan Tinggi</label>
+                <input type="text" id="universitas" name="universitas" style="margin-left:121px" size="30px" required>
+                <br><br>
+
+                <label for="prodi">Program Studi</label>
+                <input type="text" id="prodi" name="prodi" style="margin-left:138px" size="30px" required>
+                <br><br>
+
+                <label for="semester">Semester</label>
+                <input type="number" min="1" max="6" id="semester" name="semester" style="margin-left:169px" required>
+                <br><br>
+
+                <label for="ipk">IPK</label>
+                <input type="number" step="0.00" min="0" max="4" id="ipk" name="ipk" style="margin-left:208px" required>
+                <br><br>
+
+                <label for="alasan">Alasan </label><br>
+                <textarea id="alasan" name="alasan" rows="10" cols="63" placeholder="Tuliskan alasan mendaftar beasiswa..." required></textarea>
+                <br><br>
+
+                <label for="foto">Foto Formal</label>
+                <input type="file" id="foto" name="foto" style="margin-left:150px" required>
+                <br><br>
+                
+                <button style="width:50px;height:25px;border-radius: 10px 10px 10px 10px;background-color: #1A2238;"><a href="#next" style="text-decoration: None;color:gainsboro;">Next</a></button>
+            </form>
+        </main><br>
+        
+        <main style="display:flex; justify-content: center; margin:auto; width:625px; height:480px; background-color: gainsboro; border-radius: 10px 10px 10px 10px; font-family: Arial; font-size:15px">
+            <form method="post" style="margin-top:50px; margin-right:auto; margin-left:60px">
+                <h2><a name="next">Tes Lead Yourself Scholarship</a></h2>
+                <p>Kepanjangan SGIE adalah:</p>
+                <input type="checkbox" id="1" name="sgie" value="segoGorengIwakEndhok">
+                <label for="1">Sego Goreng Iwak Endhok</label><br>
+                <input type="checkbox" id="2" name="sgie" value="stateOfTheGlobalIslamicEconomy">
+                <label for="2">State of the Global Islamic Economy </label><br>
+                <input type="checkbox" id="3" name="sgie" value="sungaiGanggaIniElok">
+                <label for="3">Sungai Gangga Ini Elok</label><br>
+                <input type="checkbox" id="4" name="sgie" value="singaPororoIkanElang">
+                <label for="4">Singa Gajah Ikan Elang</label><br>
+
+
+                <p>Hasil dari 2+3 adalah:</p>
+                <input type="radio" id="a" name="2+3" value="5">
+                <label for="a">5</label><br>
+                <input type="radio" id="b" name="2+3" value="6">
+                <label for="b">6</label><br>
+                <input type="radio" id="c" name="2+3" value="1">
+                <label for="c">1</label><br>
+                <input type="radio" id="d" name="2+3" value="8">
+                <label for="d">8</label><br><br><br>
+                <input type="submit" style="width:80px;height:30px;border-radius: 10px 10px 10px 10px;background-color: #1A2238;color:gainsboro;" onclick="alert('Submitted')">
+            </form>
+        </main>
+    </body>
+
+</html>

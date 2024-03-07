@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pertemuan 3</title>
+    </head>
+    <body>
+        <form>
+            <input type="text"> <!--text satu baris-->
+            <input type="radio"> <!-- memilih cuma satu box -->
+            <input type="checkbox"> <!--memilih lebih dari satu-->
+            <input type="submit"> <!--submit button-->
+            <input type="button"> <!--display submit-->
+            <input type="color"> <br>
+            <input type="date"> <br>
+            <input type="datetime-local"> <br>
+            <input type="email"> <br>
+            <input type="file"> <br>
+            <input type="hidden"> <br>
+            <input type="image"> <br>
+            <input type="month"> <br>
+            <input type="number"> <br>
+            <input type="password"> <br>
+            <input type="range"> <br>
+            <input type="reset"> <br>
+            <input type="search"> <br>
+            <input type="tel"> <br> <!--Telepon-->
+            <input type="time"> <br>
+            <input type="url"> <br>
+            <input type="week"> <br>
+
+            <br>
+            <br>
+            <label for="nama">First Name : </label>
+            <input type="text" id="nama" name="first_nama"><br>
+            <p>Last Name : <input type="text" name="last_name"></p>
+            
+            <br>
+            <label for="cars">Choose a car : </label>
+            <select id="cars" name="cars">
+                <option value="Volvo">Volvo</option>
+                <option value="Saab">Saab</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Audi">Audi</option>
+            </select>
+
+            <label for="handphone">Choose a handphone : </label>
+                <select id = "handphone" name="handphone">
+                    <option value="Iphone">Iphone</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Oppo">Oppo</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                </select>
+            
+
+            <br>
+            <p>Choose Your favorite Web Language</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label>
+            <input type="radio" id="js" name="fav_language" value="JavaScript">
+            <label for="js">Java Script</label>
+
+            <br>
+            <p>Choose your favorite place :</p>
+            <input type="radio" id="wisdom" name="fav_place" value="Wisdom">
+            <label for="wisdom">Wisdom</label>
+            <input type="radio" id="maskam" name="fav_place" value="Maskam"> 
+            <label for="maskam">Maskam</label>
+            <input type="radio" id="GedungHeritage" name="fav_place" value="GedungHeritage"> 
+            <label for="GedungHeritage">Gedung Heritage</label>
+            <input type="radio" id="DSSDI" name="fav_place" value="DSSDI">  
+            <label for="DSSDI">DSSDI</label>
+            <br>
+
+            <p>Choose more than one :</p>
+            <input type="checkbox" id="rich" name="chooseMore" value="Rich">  
+            <label for="rich">Rich</label>
+            <input type="checkbox" id="healthy" name="chooseMore" value="Healthy">  
+            <label for="healthy">Healthy</label>
+            <input type="checkbox" id="smart" name="chooseMore" value="Smart">  
+            <label for="smart">Smart</label>
+            <input type="checkbox" id="BrightFuture" name="chooseMore" value="BrightFuture"> 
+            <label for="BrightFuture">Bright Future</label>
+            <br>
+
+            <p>Masukkan pesan dan kesan : </p>
+            <textarea name="Pesan" rows="10" cols="20" placeholder="Masukkan Pesan dan Kesan..."></textarea>
+
+            <br>
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            <br>
+
+            <label for="firstname">First Name : </label>
+            <input type="text" id="lastname" name="first_name" value="Nino" readonly><br>
+            <label for="lastname">Last Name : </label>
+            <input type="text" id="lastname" name="last_name" value="Nahara" disabled>
+            <br>
+
+            <label for="firstname">First Name : </label>
+            <input type="text" id="lastname" name="first_name" size="50"><br>
+            <label for="pin">Pin : </label>
+            <input type="text" id="pin" name="pin"size="4">
+            <br>
+
+            <label for="phone">Enter a phone number : </label>
+            <input type="tel" id="phone" name="phone" placeholder="08123456789" pattern="[0-9]{11}" title="only eleven number">
+            <br>
+
+            <label for="usn">Username : </label>
+            <input type="text" id="usn" name="username" required>
+            <br>
+
+            <label for="name">Nama : </label>
+            <input type="text" id="name" name="nama" autofocus>
+            <br>
+        </form>
+
+        <svg width="1000" height="1000">
+            <rect width="200" height="200" style="fill:white;stroke-width:8;stroke:blue"></rect>
+            <circle cx="200" cy="200" r="50" stroke="red" stroke-width="2" fill="orange"></circle>
+        </svg>
+        <canvas id="myCanvas" width="400" height="200"></canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+
+            ctx.font = "30px Arial";
+            ctx.fillText("Hello World", 220,150);
+        </script>
+
+    </body>
+</html>

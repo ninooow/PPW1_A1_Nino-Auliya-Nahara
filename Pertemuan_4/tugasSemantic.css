@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    margin : 0;
+}
+header{
+    background-color: #1A2238;
+    height:85px;
+    display: flex;
+}
+header h1{
+    font-weight:1000;
+    font-size:32;
+}
+header h1 a {
+    letter-spacing: -5px;
+    color:white;;
+    padding : 24px  45px 24px 32px;
+    text-decoration: none;
+}
+header h1 a:active {
+    color:#1A2238;;
+}
+header .head {
+    float: right; 
+    font-weight: 1000;
+    font-size: 18px; 
+    padding-top : 28px;
+}
+
+.head a{
+    color:white;
+    text-decoration: none; 
+    padding : 28px  150px 35px 150px;
+    
+}
+
+.head a:hover{
+    background-color: white;
+    color:#1A2238;
+}
+
+.head a:active{
+    background-color: #1A2238;
+    color:white;
+}
+
+aside{
+    background-color: white;
+    float : right;
+    width : 250px;
+    height : 700px;
+}
+aside img{
+    border-radius: 50%;
+    margin-top:70px; 
+    margin-left: 70px;
+    width: 100px;
+}
+aside p{
+    white-space: pre;
+    margin-top:auto;
+    line-height: 150%;
+}
+main{
+    background-color: white;
+    width:auto;
+    height:700px;
+}
+main section{
+    background-image: url("trpl.JPG");
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    height: 700px;
+}
+main section article {
+    background-color: white;
+    height:300px;
+    width:950px;
+    margin-left:30px;
+    text-align: justify;
+}
+main section article a {
+    font-size: 100px;
+    padding-left:30px;
+}
+main section article p.introducing {
+    font-size: 50px;
+    float:right;
+    padding-top:50px;
+    padding-right: 30px;
+}
+main section article p.articleAbout {
+    text-align: center;
+    font-size: 18px;
+    padding-top:80px;
+    padding-right: 50px;
+    padding-left:50px;
+    line-height: 30px;
+}
+footer{
+    background-color: #1A2238 ;
+    color:white;
+    height:45px;
+    text-align: center;
+    padding-top:20px;
+}
+
+
+
+
+
+

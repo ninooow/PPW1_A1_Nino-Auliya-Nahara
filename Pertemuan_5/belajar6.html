@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FlexBox</title>
+        <style>
+            body{
+                background-color: lightblue;
+            }
+            .container{
+                display:flex;
+                flex-direction: row-reverse; /*| row (kiri ke kanan)| row-reverse (kanan ke kiri)| column (atas ke bawah)| column-reverse (bawah ke atas)| */
+                flex-wrap:wrap; /* |nowrap (item dalam satu baris) | wrap (item dibungkus beberapa baris dari atas ke bawah)| wrap-reverse (dibungkus bawah ke atas) | */
+                /* flex-flow : column wrap; */ /*Penggabungan antara flex-direction dan flex-wrap*/
+                justify-content : space-between;
+                align-items : center;
+                align-content : center;
+                row-gap:30px;
+                column-gap:100px;
+            }
+            .div{
+                border:1px solid black;
+                margin:5px;
+                padding:5px;
+                background-color:white;
+                width : 200px;
+                flex-grow:1;                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="div">div1</div>
+            <div class="div">div2</div>
+            <div class="div">div3</div>
+            <div class="div">div4</div>
+            <div class="div">div5</div>
+            <div class="div">div6</div>
+            <div class="div">div7</div>
+            <div class="div">div8</div>
+            <div class="div">div9</div>
+            <div class="div">div10</div>
+        </div>
+    </body>
+</html>

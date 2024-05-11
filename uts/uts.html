@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+    <title>UTS Praktikum Pemrograman Web 1</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            background-color: #27ae60;
+        }
+
+        nav ul {
+            list-style-type: None;
+        }
+
+        h1 {
+            color: #f0f0f0;
+        }
+
+        .nav {
+            color: #f0f0f0;
+        }
+
+        .nav a {
+
+        }
+
+        .nav__menu {
+            display:flex;
+            text-transform: uppercase;
+        }
+
+        .nav__menu-item {
+            background: rgba(0, 0, 0, 0.4);
+            padding : 20px;
+            
+        }
+
+        .nav__menu-item:hover {
+            background-color: #9b59b6;
+        }
+
+        .nav__menu-item:hover .nav__submenu {
+            display:block;
+        }
+
+        .nav__submenu {
+            text-transform: none;
+            font-weight: 100;
+            background-color: #9b59b6;
+            margin-top:20px;
+        }
+
+        .nav__submenu-item:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        ul ul ul{
+            position:absolute;
+            margin-left:133px;
+            margin-top:-75px;
+        }
+
+        ul ul li {
+            padding-top : 10px;
+            padding-bottom : 10px;
+            padding-left : 10px;
+            padding-right : 100px;
+        }
+
+        ul ul li:hover ul {
+            display:block;
+        }
+
+        ul ul ul li {
+            background-color: #DF7F18;
+            margin-left: 100px;
+            padding-top : 10px;
+            padding-bottom : 10px;
+            padding-left : 10px;
+            padding-right : 100px;
+        }
+
+        ul ul ul li:hover {
+            background-color: #C77115;
+        }
+
+        ul ul {
+            display: none;
+            position: absolute;
+            padding:0;
+            margin-left:-10;
+            position:absolute;
+            margin-left:-20px;
+        }
+    </style>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165289732-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165289732-1');
+</script>
+
+<!-- Google tag (gtag.js) - GTAG 4 UGM-wide -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L4JC39NX24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L4JC39NX24');
+</script>
+</head>
+
+<body>
+
+    <h1>UTS Praktikum Pemrograman Web 1</h1>
+    <nav class="nav">
+        <ul class="nav__menu">
+            <li class="nav__menu-item"><a>Home</a></li>
+            <li class="nav__menu-item"><a>Services</a>
+                <!-- First Tier Drop Down -->
+                <ul class="nav__submenu">
+                    <li class="nav__submenu-item"> <a>Web Design</a></li>
+                    <li class="nav__submenu-item"> <a>Web Development </a>
+                        <!-- Second Tier Drop Down -->
+                        <ul class="nav__subsubmenu">
+                            <li class="nav__subsubmenu-item"> <a>Laravel</a></li>
+                            <li class="nav__subsubmenu-item"> <a>CodeIgniter </a></li>
+                            <li class="nav__subsubmenu-item"> <a>Wordpress</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__submenu-item"> <a>Web Hosting</a></li>
+                </ul>
+            </li>
+            <li class="nav__menu-item"><a href="about.html">About</a> </li>
+            <li class="nav__menu-item"><a>Blog</a></li>
+            <li class="nav__menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

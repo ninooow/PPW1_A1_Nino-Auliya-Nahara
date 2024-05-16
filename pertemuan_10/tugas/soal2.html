@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum Belajar Javascript 1</title>
+</head>
+<body>
+    <h1>Belajar Javascript Pemula</h1>
+    <script>
+        console.log("Hello World!");
+        console.log("You are cool");
+        alert("Selamat Datang di Gubuk Kami");
+        document.write("<h2>A few words</h2>");
+        document.write("<hr>");
+        document.write("<p>Hello Guys Welcome Back To My Channel</p>");
+        document.write("<p>Once again I just want to say <b>'You are cool'</b>.</p>");
+    </script>
+    <button onclick="hasilOutput()">Click Me!</button>
+    <div id="hasil-output"></div>
+    <script>
+        function hasilOutput(){
+            var hasil = document.getElementById("hasil-output");
+            hasil.innerHTML = "<p>Love You Guys!</p>";
+        }
+    </script>
+</body>
+</html>

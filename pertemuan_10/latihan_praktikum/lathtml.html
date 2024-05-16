@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript dari Nol</title>
+</head>
+<body>
+    <script>
+        // console.log
+        console.log("Hello World!");
+        // alert 
+        window.alert("Hello World!");
+        alert("Halo Dunia!");
+        alert("Selamat datang di tutorial belajar Javascript!")
+        function sayHello(){
+            alert("Luv yu :)");
+        }
+
+        // document.write()
+        document.write("<h1>Hello dik!</h1>")
+        document.write("<hr>")
+        document.write("<p>Belajar Yuk</p>")
+        document.write("di <b>youtube</b>")
+    </script>
+    <button onclick="sayHello()">Hello mniez</button><br>
+    <h1>Tutorial Javascript untuk Pemula</h1>
+    <div id="hasil-output"></div>
+    <script>
+        // innerHTML
+        // membuat objek elemen
+        var hasil = document.getElementById("hasil-output");
+        // menampilkan output ke elemen hasil
+        hasil.innerHTML = "<p>Aku suka kamu</p>"
+    </script>
+</body>
+</html>

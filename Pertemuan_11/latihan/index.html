@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATIHAN PERTEMUAN 11</title>
+</head>
+<body>
+    <script>
+
+        // Contoh variabel javascript dalam html
+        // Membuat variabel
+        var title = "Belajar Pemrograman Javascript";
+        var name = "UGM Nino";
+        var visitorCount = 50322;
+        var isActive = true;
+        var url = "https://www.petanikode.com";
+
+        // Menampilkan variabel ke jendela dialog (alert)
+        alert("Selamat datang di " + name);
+
+        // Menampilkan variabel ke dalam html
+        document.write(title + "<br>");
+        document.write("Nama Situs : " + name + "<br>");
+        document.write("Jumlah Pengunjung : " + visitorCount + "<br>");
+        document.write("Situs Aktif : " + isActive + "<br>");
+        document.write("Alamat URL : " + url + "<br>");
+        document.write("<br>");
+
+        // Mengisi ulang variabel
+        // Mula-mula kita buat variabel dengan isi seperti ini
+        var age = 18;
+        document.write(age + "<br>");
+        // lalu kita isi ulang
+        age = 21;
+        document.write(age + "<br>");
+        document.write("<br>");
+
+        // Menghapus Variabel
+        bookTitle = "Belajar Pemrograman JavaScript";
+        document.write(bookTitle + "<br>");
+        delete bookTitle;
+        document.write("<br>");
+
+        // 3 macam jendela dialog
+        // jendela alert
+        alert("Hello World!");
+        var yakin = confirm("Apakah anda yakin akan mengunjungi Petani Kode?");
+        if (yakin){
+            window.location = "https://www.petanikode.com";
+        }else{
+            document.write("Baiklah, tetap di sini saja ya :)" + "<br>");
+        }
+        var nama = prompt("Siapa nama kamu? ");
+        document.write("Hello " + nama + "<br>");
+        document.write("<br>");
+
+        // tipe data otomatis
+        var namee = "Dian";
+        var agee = 22;
+        var singlee = true;
+        document.write("tipe data " + typeof name + "<br>");
+        document.write("tipe data " + typeof agee + "<br>");
+        document.write("tipe data " + typeof singlee + "<br>");
+        document.write("<br>");
+
+        // Operator dalam JavaScript
+        var jumlahView = 12;
+        jumlahView+=1;
+        var a = 2;
+        a++;
+        document.write("Jumlah View " + jumlahView + "<br>");
+        document.write("a " + a + "<br>");
+        document.write("<br>");
+
+        document.write("Mula-mula nilai score... <br>");
+        var score = 100;
+        document.write("score = " + score +"<br>");
+        score += 5;
+        document.write("score = " + score +"<br>");
+        score -= 2;
+        document.write("score = " + score +"<br>");
+        score /=4;
+        document.write("score = " + score +"<br>");
+        score *= 2;
+        document.write("score = " + score +"<br>");
+        score **= 2;
+        document.write("score = " + score +"<br>");
+        score %= 3;
+        document.write("score = " + score +"<br>");
+        document.write("<br>");
+
+        var aku = 20;
+        var kamu = 19;
+        var hasil = aku==kamu;
+        document.write("20==19 " + hasil + "<br>");
+        hasil = aku > kamu;
+        document.write("20>19 " + hasil + "<br>");
+        hasil = aku >= kamu;
+        document.write("20>=19 " + hasil + "<br>");
+        hasil = aku < kamu;
+        document.write("20<19 " + hasil + "<br>");
+        hasil = aku <= kamu;
+        document.write("20<=19 " + hasil + "<br>");
+        hasil = aku != kamu;
+        document.write("20!=19 " + hasil + "<br>");
+        document.write("<br>");
+
+        var a = "4" == 4;
+        var b = "4" === 4;
+        document.write("'4'==4 " + a + "<br>");
+        document.write("'4'===4 " + "<br>");
+        document.write("<br>");
+
+
+        var me = 20;
+        var you = 19;
+
+        var benar = me>you;
+        var salah = me<you;
+        result = benar&&salah;
+        document.write("true&&false= " + result + "<br>");
+        result = benar||salah;
+        document.write("true||false= " + result + "<br>");
+        result = ! benar;
+        document.write("!true= " + result + "<br>");
+        document.write("<br>");
+
+        // Operator Ternary
+        var pertanyaan = confirm("Apakah kamu berumur di atas 18 tahun?");
+        var hasill = pertanyaan ? "Selamat datang" : "Kamu tidak boleh di sini!";
+        document.write(hasill);
+        document.write("<br>");
+    </script>
+</body>
+</html>
